@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>flexible</title>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <style>
+    /* page reset css start */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        box-sizing: border-box;
+        height: 100%;
+    }
+    *,*:before,*:after{
+        box-sizing: inherit;
+    }
+    body{
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 10.0rem;
+        height: 100%;
+        overflow-y: auto;
+        background-color: #f5294c;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+    /* page reset css end */
+
+    /* page often use class start */
+    .imgauto{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .flex-box{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+    .flex1{
+        -webkit-box-flex:1;
+        -moz-box-flex:1;
+        -webkit-flex:1;
+        -ms-flex:1;
+        flex:1;
+    }
+    .vh-cen{
+        display: -webkit-box;
+        display: -moz-box;
+
+        display: -ms-flexbox;
+
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-box-pack: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+
+        -webkit-box-align: center;
+        -moz-align-items: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .text-of-one{
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .text-over-two{
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    /* page often use class end */
+
+    /* font-size set start */
+    div{
+        font-size: 12px;
+    }
+    [data-dpr="2"] div{
+        font-size: 24px;
+    }
+    [data-dpr="3"] div{
+        font-size: 36px;
+    }
+
+    .font14{
+        font-size: 14px;
+    }
+    [data-dpr="2"] .font14{
+        font-size: 28px;
+    }
+    [data-dpr="3"] .font14{
+        font-size: 42px;
+    }
+
+    .font16{
+        font-size: 16px;
+    }
+    [data-dpr="2"] .font16{
+        font-size: 32px;
+    }
+    [data-dpr="3"] .font16{
+        font-size: 48px;
+    }
+
+    .font18{
+        font-size: 18px;
+    }
+    [data-dpr="2"] .font18{
+        font-size: 36px;
+    }
+    [data-dpr="3"] .font18{
+        font-size: 54px;
+    }
+
+    .font20{
+        font-size: 20px;
+    }
+    [data-dpr="2"] .font20{
+        font-size: 40px;
+    }
+    [data-dpr="3"] .font20{
+        font-size: 60px;
+    }
+    /* font-size set end */
+
+    /* page main style start */
+    .g-wrap{
+        padding-bottom: 0.666667rem;
+    }
+    .m-banner{
+        width: 10.0rem;
+        height: 6.4rem;
+        background: url(http://gw.alicdn.com/mt/TB1PNLZKXXXXXaTXXXXXXXXXXXX-750-481.jpg) no-repeat;
+        background-size: contain;
+    }
+    .m-list li{
+        margin-right: auto;
+        margin-left: auto;
+        width: 9.733333rem;
+        background-color: #fff;
+        margin-bottom: 1px;
+    }
+    .m-list .gs-img{
+        width: 2.533333rem;
+    }
+    .m-list .gs-details{
+        width: 7.2rem;
+        padding: 0.133333rem;
+    }
+    .m-list .gs-name{
+        color: #000;
+        line-height: 1.3;
+    }
+    .m-list .gs-price{
+        margin-top: 0.266667rem;
+        color: #f32a4a;
+    }
+    .m-list .gp-tag,.m-list .gp-num,.m-list .gp-intro{
+        display: inline-block;
+    }
+    .m-list .gp-tag{
+        padding: 0.026667rem 0.093333rem;
+        background-color: #f5294c;
+        color: #fff;
+        border-radius: 2px;
+    }
+    .m-list .gs-desc{
+        margin-top: 0.266667rem;
+        color: #fd5100;
+    }
+    .m-list .gs-btn{
+        margin-top: -0.4rem;
+        text-align: right;
+    }
+    .m-list .gs-btn span{
+        display: inline-block;
+        margin-top: 0.133333rem;
+        padding: 0.133333rem 0.4rem;
+        text-align: center;
+        background-color: #f5294c;
+        color: #fff;
+        border-radius: 2px;
+    }
+    /* page main style end */
+    </style>
+</head>
+<body>
+    <div class="g-wrap">
+        <div class="m-banner"></div>
+        <ul class="m-list">
+            <li>
+                <a href="javascript:;" class="flex-box">
+                    <div class="gs-img vh-cen">
+                        <img class="imgauto" src="https://placeimg.com/350/350/people/grayscale" alt="">
+                    </div>
+                    <div class="gs-details fx1">
+                        <p class="gs-name font16 text-over-two">ONLY2015秋装新品七分袖弹力修身针织衫女ONLY2015秋装新品七分袖弹力修身针织衫女</p>
+                        <div class="gs-price text-of-one">
+                            <span class="gp-tag font14">双11价</span>
+                            <span class="gp-num font16">¥700.00</span>
+                            <span class="gp-intro font14">(满300减150)</span>
+                        </div>
+                        <p class="gs-desc font16">2838人正在疯抢</p>
+                        <div class="gs-btn">
+                            <span class="font16">马上抢！</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="flex-box">
+                    <div class="gs-img vh-cen">
+                        <img class="imgauto" src="https://placeimg.com/350/350/people/grayscale" alt="">
+                    </div>
+                    <div class="gs-details fx1">
+                        <p class="gs-name font16 text-over-two">品七分袖弹力修身针织衫女</p>
+                        <div class="gs-price text-of-one">
+                            <span class="gp-tag font14">双11价</span>
+                            <span class="gp-num font16">¥700.00</span>
+                            <span class="gp-intro font14">(满300减150)</span>
+                        </div>
+                        <p class="gs-desc font16">2838人正在疯抢</p>
+                        <div class="gs-btn">
+                            <span class="font16">马上抢！</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="flex-box">
+                    <div class="gs-img vh-cen">
+                        <img class="imgauto" src="https://placeimg.com/350/350/people/grayscale" alt="">
+                    </div>
+                    <div class="gs-details fx1">
+                        <p class="gs-name font16 text-over-two">品七分袖弹力修身针织衫女</p>
+                        <div class="gs-price text-of-one">
+                            <span class="gp-tag font14">双11价</span>
+                            <span class="gp-num font16">¥700.00</span>
+                            <span class="gp-intro font14">(满300减150)</span>
+                        </div>
+                        <p class="gs-desc font16">2838人正在疯抢</p>
+                        <div class="gs-btn">
+                            <span class="font16">马上抢！</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="flex-box">
+                    <div class="gs-img vh-cen">
+                        <img class="imgauto" src="https://placeimg.com/350/350/people/grayscale" alt="">
+                    </div>
+                    <div class="gs-details fx1">
+                        <p class="gs-name font16 text-over-two">品七分袖弹力修身针织衫女</p>
+                        <div class="gs-price text-of-one">
+                            <span class="gp-tag font14">双11价</span>
+                            <span class="gp-num font16">¥700.00</span>
+                            <span class="gp-intro font14">(满300减150)</span>
+                        </div>
+                        <p class="gs-desc font16">2838人正在疯抢</p>
+                        <div class="gs-btn">
+                            <span class="font16">马上抢！</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="flex-box">
+                    <div class="gs-img vh-cen">
+                        <img class="imgauto" src="https://placeimg.com/350/350/people/grayscale" alt="">
+                    </div>
+                    <div class="gs-details fx1">
+                        <p class="gs-name font16 text-over-two">品七分袖弹力修身针织衫女</p>
+                        <div class="gs-price text-of-one">
+                            <span class="gp-tag font14">双11价</span>
+                            <span class="gp-num font16">¥700.00</span>
+                            <span class="gp-intro font14">(满300减150)</span>
+                        </div>
+                        <p class="gs-desc font16">2838人正在疯抢</p>
+                        <div class="gs-btn">
+                            <span class="font16">马上抢！</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="flex-box">
+                    <div class="gs-img vh-cen">
+                        <img class="imgauto" src="https://placeimg.com/350/350/people/grayscale" alt="">
+                    </div>
+                    <div class="gs-details fx1">
+                        <p class="gs-name font16 text-over-two">品七分袖弹力修身针织衫女</p>
+                        <div class="gs-price text-of-one">
+                            <span class="gp-tag font14">双11价</span>
+                            <span class="gp-num font16">¥700.00</span>
+                            <span class="gp-intro font14">(满300减150)</span>
+                        </div>
+                        <p class="gs-desc font16">2838人正在疯抢</p>
+                        <div class="gs-btn">
+                            <span class="font16">马上抢！</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
