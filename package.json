@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hajiwon1023/Flexible#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-cache": "^0.4.5",
     "gulp-clean": "^0.3.2",
@@ -28,6 +29,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.0.6",
-    "gulp-uglify": "^1.5.4"
+    "gulp-uglify": "^1.5.4",
+    "jshint": "^2.9.2"
   }
 }
